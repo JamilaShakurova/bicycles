@@ -1,13 +1,14 @@
 .DS_Store
 .idea
+.vscode
+package-lock.json
 *.ai
 *.log
 *.pdf
 *.psd
 *.sublime*
-*.vscode*
-css/*.css
 node_modules/
 npm-debug.*
+source/css/*.css
+source/css/*.map
 Thumbs.db
-build/
