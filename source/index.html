@@ -10,96 +10,121 @@
 
 <body>
   <header class="main-header">
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="#" class="main-nav__link">О нас</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Виды велосипедов</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Видео про велосипеды</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
+        <li class="main-nav__item"><a href="#about-us" class="main-nav__link">О нас</a></li>
+        <li class="main-nav__item"><a href="#catalog" class="main-nav__link">Виды велосипедов</a></li>
+        <li class="main-nav__item"><a href="#video-about-bicycles" class="main-nav__link">Видео про велосипеды</a></li>
+        <li class="main-nav__item"><a href="#address" class="main-nav__link">Контакты</a></li>
       </ul>
     </nav>
+    <button class="main-header__toggle" type="button"></button>
   </header>
   <main class="main-content">
     <section class="intro">
-      <a href="#" class="intro__logo">
-        <img src="../img/logo.png" alt="Логотип магазина Велосипеды" class="intro__logo">
-      </a>
-      <h1 class="intro__title">Мы продаем
-        велосипеды</h1>
-      <p class="intro__description">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
-      <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="form__inner-wrap">
-          <ul class="form__list">
-            <li class="form__item">
-              <input type="text" name="name" id="name" class="form__input" placeholder="Введите Ваше Имя">
-            </li>
-            <li class="form__item">
-              <input type="text" name="tel" id="tel" class="form__input" placeholder="Введите Ваш номер телефона">
-            </li>
-          </ul>
-          <button class="form__bnt button" type="submit">Подобрать велосипед мечты</button>
+      <div class="intro__inner-wrap">
+        <div class="intro__wrap">
+          <a href="#" class="intro__logo">
+            <img src="../img/logo.png" alt="Логотип магазина Велосипеды" class="intro__logo">
+          </a>
+          <h1 class="intro__title">Мы продаем
+            велосипеды</h1>
+          <p class="intro__description">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
         </div>
-      </form>
+        <form class="form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form__inner-wrap">
+            <h4 class="form__title">Заполните поля ниже и мы подберем велосипед Вашей мечты</h4>
+            <ul class="form__list">
+              <li class="form__item">
+                <input type="text" name="name" id="name" class="form__input" placeholder="Введите Ваше Имя">
+              </li>
+              <li class="form__item">
+                <input type="text" name="tel" id="tel" class="form__input" placeholder="Введите Ваш номер телефона">
+              </li>
+            </ul>
+            <button class="form__btn button" type="submit">Подобрать велосипед мечты</button>
+          </div>
+        </form>
+      </div>
     </section>
     <section class="about-us">
-      <h2 class="about-us__title">Несколько фактов о нас</h2>
+      <h2 class="about-us__title"><a name="about-us"></a>Несколько фактов о нас</h2>
       <div class="about-us__inner-wrap">
         <ul class="about-us__list">
           <li class="about-us__item">
-            <span class="about-us_num">01</span>
+            <span class="about-us__num">01</span>
             <p class="about-us__text">Самый широкий выбор велосипедов!</p>
           </li>
           <li class="about-us__item">
-            <span class="about-us_num">02</span>
+            <span class="about-us__num">02</span>
             <p class="about-us__text">Доставка велосипедов по всей России!
           <li class="about-us__item">
-            <span class="about-us_num">03</span>
+            <span class="about-us__num">03</span>
             <p class="about-us__text">Большой выбор крутых аксессуаров!</p>
           </li>
           <li class="about-us__item">
-            <span class="about-us_num">04</span>
+            <span class="about-us__num">04</span>
             <p class="about-us__text">Профессиональные консультации!</p>
           </li>
         </ul>
       </div>
     </section>
     <section class="catalog">
-      <h2 class="catalog__title">Виды велосипедов</h2>
-      <div class="catalog__product">
-        <a href="#" class="catalog__photo">
-          <img src="../img/road-bike-desktop.png" alt="Дорожный велосипед">
-        </a>
-        <h3 class="catalog__product-title">Дорожный велосипед</h3>
-      </div>
-      <div class="catalog__product">
-        <a href="#" class="catalog__photo">
-          <img src="../img/mountain-bike-desktop.png" alt="Горный велосипед">
-        </a>
-        <h3 class="catalog__product-title">Горный велосипед</h3>
-      </div>
-      <div class="catalog__product">
-        <a href="#" class="catalog__photo">
-          <img src="../img/children-bicycle-desktop.png" alt="Детский велосипед">
-        </a>
-        <h3 class="catalog__product-title">Детский велосипед</h3>
+      <h2 class="catalog__title"><a name="catalog"></a>Виды велосипедов</h2>
+      <div class="catalog__wrap">
+        <div class="catalog__product">
+          <a href="#" class="catalog__photo">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="../img/road-bike.png">
+              <img src="../img/road-bike-desktop.png" alt="Дорожный велосипед">
+            </picture>
+          </a>
+          <h3 class="catalog__product-title">Дорожный велосипед</h3>
+        </div>
+        <div class="catalog__product catalog__product--mountain-bike">
+          <a href="#" class="catalog__photo">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="../img/mountain-bike.png">
+              <img src="../img/mountain-bike-desktop.png" alt="Горный велосипед">
+            </picture>
+          </a>
+          <h3 class="catalog__product-title">Горный велосипед</h3>
+        </div>
+        <div class="catalog__product">
+          <a href="#" class="catalog__photo">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="../img/children-bicycle.png">
+              <img src="../img/children-bicycle-desktop.png" alt="Детский велосипед">
+            </picture>
+          </a>
+          <h3 class="catalog__product-title">Детский велосипед</h3>
+        </div>
       </div>
     </section>
     <section class="video-about-bicycles">
-      <h2 class="video-about-bicycles__title">Видео про велосипеды</h2>
+      <h2 class="video-about-bicycles__title"><a name="video-about-bicycles"></a>Видео про велосипеды</h2>
       <p class="video-about-bicycles__description">В этом видео мы подробно расскажем про особенности выбора велосипеда
         для себя. </p>
       <div class="video-about-bicycles__choose">
-        <img src="../img/img-video-desktop.jpg" alt="Выбор велосипеда" class="video-about-bicycles__img">
+        <picture>
+          <source media="(max-width: 767px)" srcset="../img/img-video-mobile.jpg">
+          <source media="(max-width: 1023px)" srcset="../img/img-video-tablet.jpg">
+          <img src="../img/img-video-desktop.jpg" alt="Выбор велосипеда" class="video-about-bicycles__img">
+        </picture>
         <button class="video-about-bicycles__play-btn" type="button"></button>
       </div>
     </section>
   </main>
   <footer class="footer-page">
     <div class="footer-page__address">
-      <h2 class="footer-page__title">Как нас найти?</h2>
+      <h2 class="footer-page__title"><a name="address"></a> Как нас найти?</h2>
       <p class="footer-page__address-text">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
     </div>
-    <img src="../img/map-desktop.png" alt="Карта контактов">
+    <div class="footer-page__map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6152511412683!2d30.32116901593964!3d59.938526269069975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1506962375066"
+        width="320" height="455" style="border:0" allowfullscreen=""></iframe>
+    </div>
     <div class="footer-page__contacts">
       <ul class="footer-page__list">
         <li class="footer-page__item">
@@ -108,7 +133,7 @@
               d="M24.227 0H1.773C.768 0 0 .765 0 1.765v16.47C0 19.235.768 20 1.773 20h22.454C25.232 20 26 19.235 26 18.235V1.765C26 .765 25.232 0 24.227 0zm0 17l-4.668-4.647a.86.86 0 00-1.24 0 .85.85 0 000 1.235l4.667 4.647H3.014l4.668-4.647a.85.85 0 000-1.235.86.86 0 00-1.241 0L1.773 17V5.706l10.636 8a.955.955 0 00.532.176.955.955 0 00.532-.176l10.754-8V17zm0-15.235V3.47l-11.286 8.352L1.773 3.471V1.765h22.454z"
               fill="#0AD9C6" />
           </svg>
-          <a href="mailto: puteshestviemechta@gmail.ru" class="footer-page__email-link">puteshestviemechta@gmail.ru</a>
+          <a href="mailto:puteshestviemechta@gmail.ru" class="footer-page__email-link">puteshestviemechta@gmail.ru</a>
         </li>
         <li class="footer-page__item">
           <svg class="footer-page__phone-svg" width="17" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -116,11 +141,12 @@
               d="M1.456 6.742c-.084-1.198.181-2.378.885-3.327.61-.861 1.404-1.331 2.361-1.606.807-.239 1.335.054 1.568.95.332 1.34.806 2.681.978 4.092.055.622-.347 1.5-.782 1.952-1.09 1.074-.864 1.855-.036 3.479.256.524.664 1.43 1.458 2.628.828 1.207 1.266 1.855 2.329 1.305 1.18-.594 2.041-.212 2.932.747.604.693 1.268 1.288 1.872 1.98.873 1.03.834 1.74.151 2.467-1.229 1.34-3.258 1.782-4.768.885-.834-.488-1.664-1.128-2.325-1.873-2.914-3.32-5.016-7.182-6.282-11.54a10.989 10.989 0 01-.34-2.139z"
               stroke="#0AD9C6" stroke-width="2" stroke-miterlimit="10" />
           </svg>
-          <a href="tel: +7 (499) -784-684-46" class="footer-page__phone-link">+7 (499) -784-684-46</a>
+          <a href="tel:+7(499)-784-684-46" class="footer-page__phone-link">+7 (499) -784-684-46</a>
         </li>
       </ul>
     </div>
   </footer>
+  <script src="/js/script.js"></script>
 </body>
 
 </html>

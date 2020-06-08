@@ -1,0 +1,115 @@
+.video-about-bicycles {
+  height: 710px;
+  position: relative;
+  background-color: rgba(19, 19, 20, 1);
+
+  &__title {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    padding-top: 125px;
+    margin-bottom: 25px;
+    min-height: 25px;
+  }
+
+  &__description {
+    margin: 0;
+    color: white;
+    text-align: center;
+    padding: 0 345px;
+    min-height: 50px;
+  }
+
+  &__choose {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 280px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__play-btn {
+    position: absolute;
+    width: 67px;
+    height: 67px;
+    left: 50%;
+    top: 50%;
+    background-image: url("../img/play-button.png");
+    background-repeat: no-repeat;
+    background-size: 65px 65px;
+    border: none;
+    background-position: 2px 2px;
+    background-color: transparent;
+    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      outline: 0;
+      transform: translate(-50%, -50%) scale(1.2);
+    }
+
+    &:active {
+      transform: translate(-50%, -50%) scale(0.8);
+      opacity: 0.3;
+    }
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .video-about-bicycles {
+    height: 413px;
+
+    &__title {
+      font-size: 24px;
+      padding-top: 75px;
+    }
+
+    &__description {
+      padding: 0 145px;
+    }
+
+    &__choose {
+      top: 216px;
+    }
+
+    &__play-btn {
+      width: 92px;
+      height: 92px;
+      background-size: 90px 90px;
+      left: 49.7%;
+      top: 48.5%;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .video-about-bicycles {
+    padding: 0 15px;
+    height: 384px;
+
+    &__title {
+      padding-top: 88px;
+    }
+
+    &__description {
+      padding: 0;
+    }
+
+    &__choose {
+      top: 271px;
+    }
+
+    &__play-btn {
+      width: 68px;
+      height: 68px;
+      background-size: 65px 65px;
+      left: 49.5%;
+      top: 47.5%;
+    }
+  }
+}
