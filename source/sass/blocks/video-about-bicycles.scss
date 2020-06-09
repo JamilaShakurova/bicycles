@@ -18,8 +18,11 @@
     margin: 0;
     color: white;
     text-align: center;
-    padding: 0 345px;
+    padding: 0 519px;
     min-height: 50px;
+    max-width: 1440px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   &__choose {

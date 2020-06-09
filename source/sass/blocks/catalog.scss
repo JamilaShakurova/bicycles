@@ -16,7 +16,12 @@
 
   &__wrap {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    max-width: 1440px;
+    width: 100%;
+    padding-left: 170px;
+    padding-right: 145px;
+    box-sizing: border-box;
   }
 
   &__product--mountain-bike {
@@ -45,6 +50,7 @@
     }
 
     &__wrap {
+      padding: 0;
       flex-wrap: wrap;
       justify-content: space-around;
     }

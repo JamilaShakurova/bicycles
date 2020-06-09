@@ -5,11 +5,11 @@
   padding-top: 25px;
 
   &__list {
+    display: flex;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: space-around;
-    width: 64%;
+    justify-content: space-between;
+    width: 60%;
     height: 35px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }

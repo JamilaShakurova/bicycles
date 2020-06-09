@@ -12,15 +12,21 @@
 
   &__address-text {
     margin: 0;
-    padding: 0 350px;
+    padding: 0 456px;
     min-height: 100px;
+    max-width: 1440px;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
   }
 
   &__title {
     margin: 0;
     font-size: 30px;
     font-weight: 600;
-    margin-bottom: 36px;
+    margin-bottom: 34px;
     min-height: 25px;
   }
 
@@ -37,14 +43,13 @@
 
   &__list {
     margin: 0;
-    padding: 0;
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0 440px;
   }
 
   &__item {
-    padding-right: 80px;
     align-items: center;
     display: flex;
 
@@ -105,6 +110,7 @@ iframe {
 
     &__list {
       width: 70%;
+      padding: 0;
     }
 
     &__item {
