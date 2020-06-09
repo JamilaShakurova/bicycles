@@ -1,75 +1,180 @@
 .catalog {
   width: 100%;
-  height: 1035px;
+  padding: 153px 0;
   background-color: rgba(246, 247, 249, 1);
-  box-sizing: border-box;
+}
 
-  &__title {
-    margin: 0;
-    font-size: 30px;
-    font-weight: 600;
-    text-align: center;
-    padding-top: 152px;
-    margin-bottom: 62px;
-    min-height: 25px;
+.catalog h2 {
+  margin-top: 0;
+  margin-bottom: 62px;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  min-height: 25px;
+}
+
+.catalog__wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 11vw;
+}
+
+.catalog__product {
+  position: relative;
+}
+
+.catalog__product--road-bike {
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 156px;
+    display: block;
+    width: 180px;
+    height: 180px;
+    background-image: url("../img/round-big.png");
+    background-size: 180px 180px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    z-index: -1;
+  }
+}
+
+.catalog__product--mountain-bike {
+  padding-top: 30px;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 15px;
+    display: block;
+    width: 37px;
+    height: 37px;
+    background-image: url("../img/rectangle-black.png");
+    background-size: 37px 37px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 
-  &__wrap {
-    display: flex;
-    justify-content: space-evenly;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 330px;
+    top: 570px;
+    display: block;
+    width: 47px;
+    height: 47px;
+    background-image: url("../img/rectangle.png");
+    background-size: 47px 47px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
+}
 
-  &__product--mountain-bike {
-    padding-top: 30px;
-  }
+.catalog__product--children-bicycle::before {
+  content: "";
+  position: absolute;
+  left: 299px;
+  top: -42px;
+  display: block;
+  width: 95px;
+  height: 95px;
+  background-image: url("../img/round-middle.png");
+  background-size: 95px 95px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
 
-  &__product-title {
-    margin: 0;
-    text-align: center;
-    font-size: 22px;
-    font-weight: 600;
-    padding-top: 20px;
-    min-height: 25px;
-  }
+.catalog__photo {
+  display: block;
+  width: 24vw;
+  line-height: 0;
+}
+
+.catalog__product h3 {
+  margin: 0;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  padding-top: 20px;
+  min-height: 25px;
 }
 
 @media only screen and (max-width: 1023px) {
   .catalog {
-    padding: 0 90px;
-    height: 948px;
+    padding: 60px 90px 87px;
+  }
 
-    &__title {
-      padding-top: 58px;
-      font-size: 24px;
-      margin-bottom: 35px;
-    }
+  .catalog h2 {
+    margin-bottom: 35px;
+    font-size: 24px;
+  }
 
-    &__wrap {
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
+  .catalog__wrap {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+  }
 
-    &__product--mountain-bike {
-      padding-top: 0;
-      margin-bottom: 55px;
-      padding-left: 45px;
+  .catalog__photo {
+    width: 35vw;
+  }
+
+  .catalog__product--road-bike::before {
+    left: -40px;
+    top: 200px;
+    width: 127px;
+    height: 127px;
+    background-image: url("../img/round-medium.png");
+    background-size: 127px 127px;
+  }
+
+  .catalog__product--children-bicycle::before {
+    left: 228px;
+    top: -13px;
+    width: 68px;
+    height: 68px;
+    background-image: url("../img/round-middle.png");
+    background-size: 68px 68px;
+  }
+
+  .catalog__product--mountain-bike {
+    margin-bottom: 55px;
+    padding-top: 0;
+    padding-left: 45px;
+
+    &::before,
+    &::after {
+      display: none;
     }
   }
 }
 
 @media only screen and (max-width: 767px) {
   .catalog {
-    padding: 0 15px;
-    height: 1320px;
+    padding: 58px 15px 10px;
+  }
 
-    &__wrap {
-      padding: 0 100px;
-    }
+  .catalog__wrap {
+    padding: 0 10px;
+  }
 
-    &__product--mountain-bike {
-      padding-top: 47px;
-      margin-bottom: 45px;
-      padding-left: 0;
-    }
+  .catalog__photo {
+    width: 85vw;
+  }
+
+  .catalog__product {
+    margin-bottom: 51px;
+  }
+
+  .catalog__product--mountain-bike {
+    padding-left: 0;
   }
 }

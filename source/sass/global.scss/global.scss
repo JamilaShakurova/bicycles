@@ -2,17 +2,28 @@
 //   outline: 1px red dashed;
 // }
 
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 body {
   position: relative;
-  background: white;
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 24px;
   font-style: normal;
   font-weight: 300;
-  color: black;
   font-family: "Open Sans", "Arial", sans-serif;
-  margin: 0;
-  padding: 0;
+  background: white;
+  color: black;
 }
 
 li {
@@ -25,6 +36,9 @@ a {
 
 img {
   height: auto;
+  max-width: 100%;
+  width: 100%;
+  border-style: none;
 }
 
 @font-face {

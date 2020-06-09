@@ -1,87 +1,91 @@
 .about-us {
-  height: 505px;
-  padding: 0 137px;
+  padding: 152px 140px;
+}
 
-  &__title {
-    margin: 0;
-    font-size: 30px;
-    color: rgba(31, 31, 31, 1);
-    text-align: center;
-    padding-top: 153px;
-    margin-bottom: 60px;
-    min-height: 25px;
-  }
+.about-us__wrapper h2 {
+  margin-bottom: 60px;
+  margin-top: 0;
+  font-size: 30px;
+  text-align: center;
+  color: rgba(31, 31, 31, 1);
+}
 
-  &__list {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
+.about-us__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1440px;
+}
 
-  &__item {
-    text-align: center;
-    padding: 0 15px;
-  }
+.about-us__item {
+  width: 18vw;
+  text-align: center;
+}
 
-  &__num {
-    font-size: 28px;
-    font-weight: 700;
-    color: rgba(10, 217, 198, 1);
-  }
+.about-us__num {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 700;
+  color: rgba(10, 217, 198, 1);
+}
 
-  &__text {
-    margin: 0;
-    font-size: 22px;
-    font-weight: 400;
-    padding-top: 20px;
-    line-height: 35px;
-    min-height: 152px;
-  }
+.about-us__item p {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 35px;
 }
 
 @media only screen and (max-width: 1023px) {
   .about-us {
-    padding: 270px 0 0;
-    height: 570px;
+    padding: 82px 106px 30px;
+  }
 
-    &__title {
-      font-size: 24px;
-      margin-bottom: 45px;
-    }
+  .about-us__wrapper h2 {
+    margin-bottom: 45px;
+    font-size: 24px;
+  }
 
-    &__list {
-      flex-wrap: wrap;
-    }
+  .about-us__list {
+    flex-wrap: wrap;
+  }
 
-    &__item {
-      padding: 0;
-      width: 35%;
-    }
+  .about-us__item {
+    padding: 0;
+    width: calc(50% - 15px);
+  }
 
-    &__text {
-      min-height: 115px;
-    }
+  .about-us__item p {
+    min-height: 115px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .about-us {
-    padding: 270px 15px 0 15px;
-    height: 928px;
+    padding: 0 15px 50px;
+  }
 
-    &__title {
-      padding-top: 170px;
-      font-size: 23px;
+  .about-us__wrapper h2 {
+    font-size: 22px;
+  }
+
+  .about-us__item {
+    width: 100%;
+    margin-bottom: 33px;
+
+    &:nth-child(-1n + 2) {
+      margin-bottom: 16px;
     }
 
-    &__item {
-      width: 100%;
+    &:last-child {
+      margin-bottom: 0;
     }
+  }
 
-    &__text {
-      font-size: 18px;
-      min-height: 100px;
-    }
+  .about-us__item p {
+    font-size: 18px;
+    min-height: 100px;
   }
 }

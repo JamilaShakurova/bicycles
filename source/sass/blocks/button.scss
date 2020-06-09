@@ -1,11 +1,11 @@
 .button {
-  font-size: 15px;
-  line-height: 20px;
-  font-weight: 700;
   display: block;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
   padding-top: 14px;
   padding-bottom: 14px;
   background-color: rgba(10, 217, 198, 1);
-  text-align: center;
   cursor: pointer;
 }

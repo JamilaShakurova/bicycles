@@ -16,6 +16,7 @@ var posthtml = require('gulp-posthtml');
 var include = require('posthtml-include');
 var del = require('del');
 
+
 gulp.task('css', function () {
   return gulp.src('source/sass/style.scss')
       .pipe(plumber())
@@ -63,13 +64,13 @@ gulp.task('images', function () {
 
 gulp.task('webp', function () {
   return gulp.src('source/img/**/*.{png,jpg}')
-      .pipe(webp({ quality: 90 }))
+      .pipe(webp({quality: 90}))
       .pipe(gulp.dest('source/img'));
 });
 
 gulp.task('sprite', function () {
   return gulp.src('source/img/{icon-*,htmlacademy*}.svg')
-      .pipe(svgstore({ inlineSvg: true }))
+      .pipe(svgstore({inlineSvg: true}))
       .pipe(rename('sprite_auto.svg'))
       .pipe(gulp.dest('build/img'));
 });
