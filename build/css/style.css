@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *,
 ::after,
 ::before {
@@ -7,6 +8,10 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden; }
+=======
+* {
+  outline: 1px red dashed; }
+>>>>>>> 8f39580e194ad67ee5a3fe2ae9ba85421fdafc2a
 
 body {
   position: relative;
@@ -276,6 +281,7 @@ template {
   display: -ms-flexbox;
   display: flex;
   padding-top: 25px; }
+<<<<<<< HEAD
 
 .main-nav__list {
   display: -webkit-box;
@@ -296,6 +302,26 @@ template {
     color: #0ad9c6; }
   .main-nav__link:active {
     opacity: 0.3; }
+=======
+  .main-nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 60%;
+    height: 35px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+  .main-nav__link {
+    color: white; }
+    .main-nav__link:hover, .main-nav__link:focus {
+      color: #0ad9c6; }
+    .main-nav__link:active {
+      opacity: 0.3; }
+>>>>>>> 8f39580e194ad67ee5a3fe2ae9ba85421fdafc2a
 
 @media only screen and (max-width: 1023px) {
   .main-nav {
@@ -389,6 +415,7 @@ template {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+<<<<<<< HEAD
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -439,6 +466,38 @@ template {
     line-height: 45px; }
   .intro__wrap p {
     width: 100%; } }
+=======
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 280px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 280px;
+    position: absolute;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .intro__wrap {
+    width: 100%; }
+  .intro__logo {
+    position: absolute;
+    top: 20px; }
+  .intro__title {
+    margin: 0;
+    color: white;
+    line-height: 60px;
+    font-size: 46px;
+    padding-top: 95px;
+    min-height: 150px;
+    width: 100%; }
+  .intro__description {
+    margin: 0;
+    color: white;
+    line-height: 30px;
+    font-size: 20px;
+    min-height: 64px;
+    width: 70%; }
+>>>>>>> 8f39580e194ad67ee5a3fe2ae9ba85421fdafc2a
 
 .form {
   display: -webkit-box;
@@ -451,6 +510,7 @@ template {
 .form__inner-wrap {
   width: 23vw; }
 
+<<<<<<< HEAD
 .form__inner-wrap h2 {
   margin: 0;
   font-size: 17px;
@@ -489,6 +549,46 @@ template {
     background-color: #0ac4b1; }
   .form__btn:active {
     opacity: 0.6; }
+=======
+.form {
+  width: 60%; }
+  .form__title {
+    margin: 0;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 45px 0 23px;
+    text-align: center;
+    min-height: 50px; }
+  .form__list {
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+  .form__item {
+    margin-bottom: 20px; }
+  .form__input {
+    height: 45px;
+    border-radius: 5px;
+    outline: 0;
+    width: 97.9%;
+    border: 1px solid #c9ccd4; }
+    .form__input:hover, .form__input:focus {
+      border-color: #b2b4bb; }
+    .form__input:active {
+      border-color: #0ad9c6; }
+  .form__input input[type=text] {
+    padding-left: 30px; }
+  .form__btn {
+    text-transform: none;
+    width: 100%;
+    border: none;
+    border-radius: 5px; }
+    .form__btn:hover, .form__btn:focus {
+      outline: 0;
+      background-color: #0ac4b1; }
+    .form__btn:active {
+      opacity: 0.6; }
+>>>>>>> 8f39580e194ad67ee5a3fe2ae9ba85421fdafc2a
 
 @media only screen and (max-width: 1023px) {
   .form {
@@ -521,6 +621,7 @@ template {
     width: 100%; } }
 
 .about-us {
+<<<<<<< HEAD
   padding: 152px 140px; }
 
 .about-us__wrapper h2 {
@@ -557,6 +658,41 @@ template {
   font-size: 22px;
   font-weight: 400;
   line-height: 35px; }
+=======
+  height: 505px;
+  padding: 0 120px; }
+  .about-us__title {
+    margin: 0;
+    font-size: 30px;
+    color: #1f1f1f;
+    text-align: center;
+    padding-top: 153px;
+    margin-bottom: 60px;
+    min-height: 25px; }
+  .about-us__list {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .about-us__item {
+    text-align: center;
+    padding: 0 15px; }
+  .about-us__num {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0ad9c6; }
+  .about-us__text {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 400;
+    padding-top: 20px;
+    line-height: 35px;
+    min-height: 152px; }
+>>>>>>> 8f39580e194ad67ee5a3fe2ae9ba85421fdafc2a
 
 @media only screen and (max-width: 1023px) {
   .about-us {
@@ -591,6 +727,7 @@ template {
 
 .catalog {
   width: 100%;
+<<<<<<< HEAD
   padding: 153px 0;
   background-color: #f6f7f9; }
 
@@ -723,6 +860,61 @@ template {
     padding-left: 45px; }
     .catalog__product--mountain-bike::before, .catalog__product--mountain-bike::after {
       display: none; } }
+=======
+  height: 1035px;
+  background-color: #f6f7f9;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .catalog__title {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 152px;
+    margin-bottom: 62px;
+    min-height: 25px; }
+  .catalog__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 1440px;
+    width: 100%;
+    padding-left: 170px;
+    padding-right: 145px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .catalog__product--mountain-bike {
+    padding-top: 30px; }
+  .catalog__product-title {
+    margin: 0;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    padding-top: 20px;
+    min-height: 25px; }
+
+@media only screen and (max-width: 1023px) {
+  .catalog {
+    padding: 0 90px;
+    height: 948px; }
+    .catalog__title {
+      padding-top: 58px;
+      font-size: 24px;
+      margin-bottom: 35px; }
+    .catalog__wrap {
+      padding: 0;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+    .catalog__product--mountain-bike {
+      padding-top: 0;
+      margin-bottom: 55px;
+      padding-left: 45px; } }
+>>>>>>> 8f39580e194ad67ee5a3fe2ae9ba85421fdafc2a
 
 @media only screen and (max-width: 767px) {
   .catalog {
@@ -740,6 +932,7 @@ template {
   position: relative;
   padding: 9vw 17vw 33vw;
   background-color: #131314; }
+<<<<<<< HEAD
 
 .video-about-bicycles h2 {
   margin-bottom: 25px;
@@ -792,6 +985,62 @@ template {
     -webkit-transform: translate(-50%, -50%) scale(0.8);
             transform: translate(-50%, -50%) scale(0.8);
     opacity: 0.3; }
+=======
+  .video-about-bicycles__title {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    padding-top: 125px;
+    margin-bottom: 25px;
+    min-height: 25px; }
+  .video-about-bicycles__description {
+    margin: 0;
+    color: white;
+    text-align: center;
+    padding: 0 519px;
+    min-height: 50px;
+    max-width: 1440px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .video-about-bicycles__choose {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 280px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .video-about-bicycles__play-btn {
+    position: absolute;
+    width: 67px;
+    height: 67px;
+    left: 50%;
+    top: 50%;
+    background-image: url("../img/play-button.png");
+    background-repeat: no-repeat;
+    background-size: 65px 65px;
+    border: none;
+    background-position: 2px 2px;
+    background-color: transparent;
+    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    cursor: pointer; }
+    .video-about-bicycles__play-btn:hover, .video-about-bicycles__play-btn:focus {
+      outline: 0;
+      -webkit-transform: translate(-50%, -50%) scale(1.2);
+              transform: translate(-50%, -50%) scale(1.2); }
+    .video-about-bicycles__play-btn:active {
+      -webkit-transform: translate(-50%, -50%) scale(0.8);
+              transform: translate(-50%, -50%) scale(0.8);
+      opacity: 0.3; }
+>>>>>>> 8f39580e194ad67ee5a3fe2ae9ba85421fdafc2a
 
 @media only screen and (max-width: 1023px) {
   .video-about-bicycles {
@@ -885,6 +1134,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+<<<<<<< HEAD
   .footer-page__item:hover, .footer-page__item:focus {
     opacity: 0.6; }
   .footer-page__item:active {
@@ -903,6 +1153,71 @@ template {
 
 .footer-page__phone-svg {
   margin-right: 12px; }
+=======
+  .footer-page__address {
+    padding-top: 250px;
+    text-align: center;
+    width: 100%; }
+  .footer-page__address-text {
+    margin: 0;
+    padding: 0 456px;
+    min-height: 100px;
+    max-width: 1440px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px; }
+  .footer-page__title {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 34px;
+    min-height: 25px; }
+  .footer-page__map {
+    width: 67%;
+    margin-bottom: 25px; }
+  .footer-page__contacts {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .footer-page__list {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 440px; }
+  .footer-page__item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .footer-page__item:hover, .footer-page__item:focus {
+      opacity: 0.6; }
+    .footer-page__item:active {
+      opacity: 0.3; }
+  .footer-page__email-link {
+    color: black;
+    opacity: 0.5; }
+  .footer-page__phone-link {
+    color: black;
+    opacity: 0.5; }
+  .footer-page__email-svg {
+    margin-right: 12px; }
+  .footer-page__phone-svg {
+    margin-right: 12px; }
+>>>>>>> 8f39580e194ad67ee5a3fe2ae9ba85421fdafc2a
 
 iframe {
   width: 100%;
@@ -911,6 +1226,7 @@ iframe {
 
 @media only screen and (max-width: 1023px) {
   .footer-page {
+<<<<<<< HEAD
     padding: 21vw 0; }
   .footer-page__address {
     width: 100%; }
@@ -929,6 +1245,27 @@ iframe {
     width: 91%;
     height: 518px;
     margin-bottom: 48px; } }
+=======
+    height: 890px; }
+    .footer-page__address {
+      padding-top: 155px;
+      width: 100%; }
+    .footer-page__title {
+      font-size: 24px;
+      margin-bottom: 30px; }
+    .footer-page__address-text {
+      padding: 0;
+      min-height: 45px; }
+    .footer-page__list {
+      width: 70%;
+      padding: 0; }
+    .footer-page__item {
+      padding-right: 0; }
+    .footer-page__map {
+      width: 91%;
+      height: 518px;
+      margin-bottom: 48px; } }
+>>>>>>> 8f39580e194ad67ee5a3fe2ae9ba85421fdafc2a
 
 @media only screen and (max-width: 767px) {
   .footer-page {
