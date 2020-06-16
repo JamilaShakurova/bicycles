@@ -20,7 +20,7 @@
     display: block;
     width: 50px;
     height: 50px;
-    background-color: rgba(10, 217, 198, 1);
+    background-color: rgb(10, 217, 198);
     background-image: url("../img/icon-burger-menu.svg");
     background-repeat: no-repeat;
     background-position: 10px 10px;
@@ -36,6 +36,8 @@
     background-color: transparent;
     background-position: 12px 13px;
   }
-}
 
-// @media only screen and (max-width: 767px) {}
+  .main-header__toggle--nojs {
+    display: none;
+  }
+}
