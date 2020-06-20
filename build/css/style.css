@@ -267,7 +267,9 @@ template {
     background-color: transparent;
     background-position: 12px 13px; }
   .main-header__toggle--nojs {
-    display: none; } }
+    display: none; }
+  .main-header--nojs {
+    position: inherit; } }
 
 .main-nav {
   width: 100%;
@@ -283,13 +285,14 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0;
-  padding: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0;
+  padding: 0;
   width: 60%;
-  height: 35px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
 
 .main-nav__link {
@@ -400,6 +403,7 @@ template {
             align-items: center;
     padding: 0; }
   .intro__wrap {
+    position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -505,9 +509,15 @@ template {
   .form__inner-wrap h2 {
     color: black;
     padding: 0;
-    width: 99%; }
+    width: 100%;
+    letter-spacing: 0.5px;
+    margin-bottom: 7px; }
+  .form input {
+    padding-left: 22px;
+    font-size: 15px;
+    letter-spacing: 0.2px; }
   .form__list {
-    margin-bottom: 30px; } }
+    margin-bottom: 23px; } }
 
 @media only screen and (max-width: 767px) {
   .form {
@@ -516,7 +526,10 @@ template {
     padding: 72px 15px;
     width: 100%; }
   .form__inner-wrap h2 {
-    line-height: 27px; }
+    line-height: 27px;
+    margin-bottom: 0; }
+  .form input {
+    padding-left: 27px; }
   .form__list {
     width: 99.5%; }
   .form__input {
@@ -536,6 +549,8 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -565,40 +580,56 @@ template {
     padding: 82px 106px 30px; }
   .about-us__wrapper h2 {
     margin-bottom: 45px;
-    font-size: 24px; }
+    font-size: 23px; }
   .about-us__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
   .about-us__item {
     padding: 0;
     width: calc(50% - 15px); }
+  .about-us__num {
+    margin-bottom: 23px; }
   .about-us__item p {
-    min-height: 115px; } }
+    min-height: 115px;
+    letter-spacing: -0.5px; } }
 
 @media only screen and (max-width: 767px) {
   .about-us {
-    padding: 0 15px 50px; }
+    padding: 10px 15px 50px;
+    letter-spacing: 0.5px; }
   .about-us__wrapper h2 {
     font-size: 22px; }
   .about-us__item {
     width: 100%;
-    margin-bottom: 33px; }
-    .about-us__item:nth-child(-1n + 2) {
-      margin-bottom: 16px; }
+    margin-bottom: 6px; }
     .about-us__item:last-child {
       margin-bottom: 0; }
+  .about-us__item-two {
+    margin-bottom: 35px; }
+  .about-us__item--three {
+    margin-bottom: 35px; }
+  .about-us__num--one {
+    margin-bottom: 21px; }
+  .about-us__num--two {
+    margin-bottom: 15px; }
+  .about-us__num--three {
+    margin-bottom: 15px; }
+  .about-us__num--four {
+    margin-bottom: 12px; }
   .about-us__item p {
     font-size: 18px;
     min-height: 100px; } }
 
 .catalog {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
   padding: 153px 0;
   background-color: #f6f7f9; }
 
 .catalog h2 {
   margin-top: 0;
-  margin-bottom: 62px;
+  margin-bottom: 55px;
   font-size: 30px;
   font-weight: 600;
   text-align: center;
@@ -616,7 +647,7 @@ template {
           justify-content: space-between;
   width: 100%;
   margin: 0 auto;
-  padding: 0 11vw; }
+  padding: 0 10vw 0 11.5vw; }
 
 .catalog__product {
   position: relative; }
@@ -626,8 +657,8 @@ template {
   .catalog__product--road-bike::before {
     content: "";
     position: absolute;
-    left: -50px;
-    top: 156px;
+    left: -58px;
+    bottom: 40%;
     display: block;
     width: 180px;
     height: 180px;
@@ -643,8 +674,9 @@ template {
   .catalog__product--mountain-bike::before {
     content: "";
     position: absolute;
-    left: -15px;
-    top: 15px;
+    left: -11px;
+    top: 20px;
+    bottom: 0;
     display: block;
     width: 37px;
     height: 37px;
@@ -655,8 +687,9 @@ template {
   .catalog__product--mountain-bike::after {
     content: "";
     position: absolute;
-    left: 330px;
-    top: 570px;
+    bottom: 30px;
+    left: 93%;
+    right: 0;
     display: block;
     width: 47px;
     height: 47px;
@@ -668,8 +701,8 @@ template {
 .catalog__product--children-bicycle::before {
   content: "";
   position: absolute;
-  left: 299px;
-  top: -42px;
+  right: -11%;
+  top: -36px;
   display: block;
   width: 95px;
   height: 95px;
@@ -681,22 +714,27 @@ template {
 .catalog__photo {
   display: block;
   width: 24vw;
+  margin-bottom: 27px;
   line-height: 0; }
+
+.catalog__photo--children-bicycle {
+  margin-bottom: 15px; }
 
 .catalog__product h3 {
   margin: 0;
   text-align: center;
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 600;
-  padding-top: 20px;
   min-height: 25px; }
 
 @media only screen and (max-width: 1023px) {
   .catalog {
-    padding: 60px 90px 87px; }
+    padding: 54px 90px 69px; }
   .catalog h2 {
     margin-bottom: 35px;
     font-size: 24px; }
+  .catalog__product h3 {
+    letter-spacing: -0.5px; }
   .catalog__wrap {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -704,17 +742,18 @@ template {
         justify-content: space-around;
     padding: 0; }
   .catalog__photo {
-    width: 35vw; }
+    width: 35vw;
+    margin-bottom: 28px; }
   .catalog__product--road-bike::before {
     left: -40px;
-    top: 200px;
+    bottom: 25px;
     width: 127px;
     height: 127px;
     background-image: url("../img/round-medium.png");
     background-size: 127px 127px; }
   .catalog__product--children-bicycle::before {
-    left: 228px;
-    top: -13px;
+    top: -23px;
+    bottom: 0;
     width: 68px;
     height: 68px;
     background-image: url("../img/round-middle.png");
@@ -728,20 +767,31 @@ template {
 
 @media only screen and (max-width: 767px) {
   .catalog {
-    padding: 58px 15px 10px; }
+    padding: 61px 15px 0; }
   .catalog__wrap {
     padding: 0 10px; }
   .catalog__photo {
     width: 85vw; }
   .catalog__product {
     margin-bottom: 51px; }
+  .catalog__product h3 {
+    font-size: 22px; }
   .catalog__product--mountain-bike {
-    padding-left: 0; } }
+    padding-left: 0;
+    margin-bottom: 40px; }
+  .catalog__product--road-bike {
+    margin-bottom: 42px; }
+  .catalog__product--road-bike::before {
+    left: -22px; }
+  .catalog__product--children-bicycle::before {
+    top: -20px;
+    right: -20px; } }
 
 .video-about-bicycles {
   position: relative;
-  padding: 9vw 17vw 33vw;
-  background-color: #131314; }
+  padding: 8.5vw 18vw 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(88%, #131314), color-stop(25%, white));
+  background: linear-gradient(180deg, #131314 88%, white 25%); }
 
 .video-about-bicycles h2 {
   margin-bottom: 25px;
@@ -749,20 +799,17 @@ template {
   font-size: 30px;
   font-weight: 600;
   text-align: center;
+  letter-spacing: 0.5px;
   color: white; }
 
 .video-about-bicycles p {
-  margin: 0 auto;
-  width: 35%;
+  margin: 0 auto 60px;
+  width: 45%;
   max-width: 1440px;
   text-align: center;
   color: white; }
 
 .video-about-bicycles__choose {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 280px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -773,7 +820,7 @@ template {
 .video-about-bicycles__play-btn {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 68%;
   width: 71px;
   height: 71px;
   font-size: 0;
@@ -797,31 +844,38 @@ template {
 
 @media only screen and (max-width: 1023px) {
   .video-about-bicycles {
-    padding: 10vw 17vw 31vw; }
+    padding: 10vw 17vw 1vw;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(81%, #131314), color-stop(25%, white));
+    background: linear-gradient(180deg, #131314 81%, white 25%); }
   .video-about-bicycles h2 {
     font-size: 24px; }
   .video-about-bicycles p {
-    width: 90%; }
+    width: 90%;
+    margin-bottom: 45px; }
   .video-about-bicycles__choose {
     top: 216px; }
   .video-about-bicycles__play-btn {
-    left: 49.7%;
-    top: 48.5%;
+    left: 50%;
+    top: 69%;
     width: 92px;
     height: 92px;
     background-size: 90px 90px; } }
 
 @media only screen and (max-width: 767px) {
   .video-about-bicycles {
-    padding: 88px 15px 173px; }
+    padding: 88px 15px 40px; }
+  .video-about-bicycles h2 {
+    font-size: 23px; }
   .video-about-bicycles p {
     padding: 0;
-    width: 100%; }
+    width: 100%;
+    line-height: 28px;
+    margin-bottom: 50px; }
   .video-about-bicycles__choose {
     top: 271px; }
   .video-about-bicycles__play-btn {
-    left: 49.5%;
-    top: 47.5%;
+    left: 50%;
+    top: 74%;
     width: 68px;
     height: 68px;
     background-size: 65px 65px; } }
@@ -837,7 +891,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 18vw 17vw; }
+  padding: 10.5vw 17vw; }
 
 .footer-page__address {
   width: 100%;
@@ -848,17 +902,18 @@ template {
   max-width: 1440px;
   margin: 0 auto 45px;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 16px;
+  letter-spacing: 1px;
   line-height: 28px; }
 
 .footer-page h2 {
-  margin: 0 0 28px;
+  margin: 0 0 35px;
   font-size: 30px;
   font-weight: 600; }
 
 .footer-page__map {
   width: 100%;
-  margin-bottom: 25px; }
+  margin-bottom: 30px; }
 
 .footer-page__contacts {
   -webkit-box-pack: center;
@@ -873,12 +928,11 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0 auto;
-  width: 39vw;
-  padding: 0; }
+  padding: 0;
+  width: 100%; }
 
 .footer-page__item {
   display: -webkit-box;
@@ -886,11 +940,22 @@ template {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 42%;
+  white-space: nowrap; }
   .footer-page__item:hover, .footer-page__item:focus {
     opacity: 0.6; }
   .footer-page__item:active {
     opacity: 0.3; }
+
+.footer-page__item--email {
+  width: 47%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
 
 .footer-page__email-link {
   color: black;
@@ -904,7 +969,7 @@ template {
   margin-right: 12px; }
 
 .footer-page__phone-svg {
-  margin-right: 12px; }
+  margin-right: 14px; }
 
 iframe {
   width: 100%;
@@ -913,42 +978,44 @@ iframe {
 
 @media only screen and (max-width: 1023px) {
   .footer-page {
-    padding: 21vw 0; }
+    padding: 8vw 0; }
   .footer-page__address {
     width: 100%; }
   .footer-page h2 {
     font-size: 24px;
-    margin-bottom: 23px; }
+    margin-bottom: 21px; }
   .footer-page p {
-    width: 85vw;
-    margin: 0 auto 20px; }
-  .footer-page__list {
-    width: 70%;
-    padding: 0; }
+    width: 88vw;
+    margin: 0 auto 20px;
+    font-size: 15px; }
   .footer-page__item {
     padding-right: 0; }
+  .footer-page__item--phone {
+    width: 52%; }
   .footer-page__map {
     width: 91%;
-    height: 518px;
-    margin-bottom: 48px; } }
+    height: 525px;
+    margin-bottom: 40px; } }
 
 @media only screen and (max-width: 767px) {
   .footer-page {
-    padding: 39vw 0 0; }
+    padding: 9vw 0 0; }
   .footer-page h2 {
     font-size: 18px;
-    margin-bottom: 28px; }
+    margin-bottom: 25px; }
   .footer-page p {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 30px;
     font-weight: 400;
-    width: 82%; }
+    width: 85%; }
   .footer-page__map {
     height: 255px;
     width: 100%;
     margin-bottom: 25px; }
   .footer-page__contacts {
     height: 100px; }
+  .footer-page__address {
+    margin-bottom: 25px; }
   .footer-page__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -959,10 +1026,18 @@ iframe {
             justify-content: space-evenly;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
-    width: 100%; }
+            align-items: center; }
   .footer-page__item {
-    margin-bottom: 20px; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 20px;
+    margin-right: 0;
+    width: 90%;
+    padding: 0; }
   iframe {
     height: 255px; } }
 

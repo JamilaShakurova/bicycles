@@ -77,11 +77,19 @@
   .form__inner-wrap h2 {
     color: black;
     padding: 0;
-    width: 99%;
+    width: 100%;
+    letter-spacing: 0.5px;
+    margin-bottom: 7px;
+  }
+
+  .form input {
+    padding-left: 22px;
+    font-size: 15px;
+    letter-spacing: 0.2px;
   }
 
   .form__list {
-    margin-bottom: 30px;
+    margin-bottom: 23px;
   }
 }
 
@@ -97,6 +105,11 @@
 
   .form__inner-wrap h2 {
     line-height: 27px;
+    margin-bottom: 0;
+  }
+
+  .form input {
+    padding-left: 27px;
   }
 
   .form__list {

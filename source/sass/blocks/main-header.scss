@@ -40,4 +40,8 @@
   .main-header__toggle--nojs {
     display: none;
   }
+
+  .main-header--nojs {
+    position: inherit;
+  }
 }

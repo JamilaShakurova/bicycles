@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header class="main-header">
+  <header class="main-header main-header--nojs">
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <ul class="main-nav__list">
         <li class="main-nav__item"><a href="#about-us" class="main-nav__link">О нас</a></li>
@@ -42,7 +42,7 @@
               </li>
               <li class="form__item">
                 <label for="tel">Телефон</label>
-                <input type="number" name="tel" id="tel" placeholder="Введите Ваш номер телефона" value="" min="1" max="10" required="">
+                <input type="tel" name="tel" pattern="7\/8([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" id="tel" title="Номер должен содержать 11 цифр и начинаться с 7 или 8" placeholder="Введите Ваш номер телефона" value="" maxlength="20" required="">
               </li>
             </ul>
             <button class="form__btn button" type="submit">Подобрать велосипед мечты</button>
@@ -54,20 +54,20 @@
       <div class="about-us__wrapper">
         <h2><a id="about-us"></a>Несколько фактов о нас</h2>
         <ul class="about-us__list">
-          <li class="about-us__item">
-            <span class="about-us__num">01</span>
+          <li class="about-us__item about-us__item--one">
+            <span class="about-us__num about-us__num--one">01</span>
             <p>Самый широкий выбор велосипедов!</p>
           </li>
-          <li class="about-us__item">
-            <span class="about-us__num">02</span>
+          <li class="about-us__item about-us__item-two">
+            <span class="about-us__num about-us__num--two">02</span>
             <p>Доставка велосипедов по всей России!</p>
           </li>
-          <li class="about-us__item">
-            <span class="about-us__num">03</span>
+          <li class="about-us__item about-us__item--three">
+            <span class="about-us__num about-us__num--three">03</span>
             <p>Большой выбор крутых аксессуаров!</p>
           </li>
-          <li class="about-us__item">
-            <span class="about-us__num">04</span>
+          <li class="about-us__item about-us__item--four">
+            <span class="about-us__num about-us__num--four">04</span>
             <p>Профессиональные консультации!</p>
           </li>
         </ul>
@@ -99,7 +99,7 @@
           <h3>Горный велосипед</h3>
         </div>
         <div class="catalog__product catalog__product--children-bicycle">
-          <a href="#" class="catalog__photo">
+          <a href="#" class="catalog__photo catalog__photo--children-bicycle">
             <picture>
               <source type="image/webp" media="(max-width: 767px)" srcset="img/children-bicycle@1x.webp 1x, img/children-bicycle@2x.webp 2x">
               <source type="image/webp" media="(max-width: 1023px)" srcset="img/children-bicycle@1x.webp 1x, img/children-bicycle@2x.webp 2x">
@@ -135,13 +135,13 @@
       <iframe title="contacts map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6152511412683!2d30.32116901593964!3d59.938526269069975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1506962375066" width="320" height="455" allowfullscreen=""></iframe>
     </div>
       <ul class="footer-page__list">
-        <li class="footer-page__item">
+        <li class="footer-page__item footer-page__item--email">
           <svg class="footer-page__email-svg" width="26" height="20">
             <use xlink:href="img/sprite_auto.svg#icon-email"></use>
           </svg>
           <a href="mailto:puteshestviemechta@gmail.ru" class="footer-page__email-link">puteshestviemechta@gmail.ru</a>
         </li>
-        <li class="footer-page__item">
+        <li class="footer-page__item footer-page__item--phone">
           <svg class="footer-page__phone-svg" width="17" height="24">
             <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
           </svg>

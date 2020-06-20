@@ -1,4 +1,5 @@
 .catalog {
+  flex-wrap: wrap;
   width: 100%;
   padding: 153px 0;
   background-color: rgba(246, 247, 249, 1);
@@ -6,7 +7,7 @@
 
 .catalog h2 {
   margin-top: 0;
-  margin-bottom: 62px;
+  margin-bottom: 55px;
   font-size: 30px;
   font-weight: 600;
   text-align: center;
@@ -19,7 +20,7 @@
   justify-content: space-between;
   width: 100%;
   margin: 0 auto;
-  padding: 0 11vw;
+  padding: 0 10vw 0 11.5vw;
 }
 
 .catalog__product {
@@ -32,8 +33,8 @@
   &::before {
     content: "";
     position: absolute;
-    left: -50px;
-    top: 156px;
+    left: -58px;
+    bottom: 40%;
     display: block;
     width: 180px;
     height: 180px;
@@ -52,8 +53,9 @@
   &::before {
     content: "";
     position: absolute;
-    left: -15px;
-    top: 15px;
+    left: -11px;
+    top: 20px;
+    bottom: 0;
     display: block;
     width: 37px;
     height: 37px;
@@ -66,8 +68,9 @@
   &::after {
     content: "";
     position: absolute;
-    left: 330px;
-    top: 570px;
+    bottom: 30px;
+    left: 93%;
+    right: 0;
     display: block;
     width: 47px;
     height: 47px;
@@ -81,8 +84,8 @@
 .catalog__product--children-bicycle::before {
   content: "";
   position: absolute;
-  left: 299px;
-  top: -42px;
+  right: -11%;
+  top: -36px;
   display: block;
   width: 95px;
   height: 95px;
@@ -95,26 +98,34 @@
 .catalog__photo {
   display: block;
   width: 24vw;
+  margin-bottom: 27px;
   line-height: 0;
+}
+
+.catalog__photo--children-bicycle {
+  margin-bottom: 15px;
 }
 
 .catalog__product h3 {
   margin: 0;
   text-align: center;
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 600;
-  padding-top: 20px;
   min-height: 25px;
 }
 
 @media only screen and (max-width: 1023px) {
   .catalog {
-    padding: 60px 90px 87px;
+    padding: 54px 90px 69px;
   }
 
   .catalog h2 {
     margin-bottom: 35px;
     font-size: 24px;
+  }
+
+  .catalog__product h3 {
+    letter-spacing: -0.5px;
   }
 
   .catalog__wrap {
@@ -125,11 +136,12 @@
 
   .catalog__photo {
     width: 35vw;
+    margin-bottom: 28px;
   }
 
   .catalog__product--road-bike::before {
     left: -40px;
-    top: 200px;
+    bottom: 25px;
     width: 127px;
     height: 127px;
     background-image: url("../img/round-medium.png");
@@ -137,8 +149,8 @@
   }
 
   .catalog__product--children-bicycle::before {
-    left: 228px;
-    top: -13px;
+    top: -23px;
+    bottom: 0;
     width: 68px;
     height: 68px;
     background-image: url("../img/round-middle.png");
@@ -159,7 +171,7 @@
 
 @media only screen and (max-width: 767px) {
   .catalog {
-    padding: 58px 15px 10px;
+    padding: 61px 15px 0;
   }
 
   .catalog__wrap {
@@ -174,7 +186,25 @@
     margin-bottom: 51px;
   }
 
+  .catalog__product h3 {
+    font-size: 22px;
+  }
+
   .catalog__product--mountain-bike {
     padding-left: 0;
+    margin-bottom: 40px;
+  }
+
+  .catalog__product--road-bike {
+    margin-bottom: 42px;
+  }
+
+  .catalog__product--road-bike::before {
+    left: -22px;
+  }
+
+  .catalog__product--children-bicycle::before {
+    top: -20px;
+    right: -20px;
   }
 }

@@ -7,11 +7,11 @@
 
 .main-nav__list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
-  justify-content: space-between;
   width: 60%;
-  height: 35px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 

@@ -1,7 +1,7 @@
 .video-about-bicycles {
   position: relative;
-  padding: 9vw 17vw 33vw;
-  background-color: rgba(19, 19, 20, 1);
+  padding: 8.5vw 18vw 0;
+  background: linear-gradient(180deg, rgba(19, 19, 20, 1) 88%, rgba(255, 255, 255, 1) 25%);
 }
 
 .video-about-bicycles h2 {
@@ -10,22 +10,19 @@
   font-size: 30px;
   font-weight: 600;
   text-align: center;
+  letter-spacing: 0.5px;
   color: white;
 }
 
 .video-about-bicycles p {
-  margin: 0 auto;
-  width: 35%;
+  margin: 0 auto 60px;
+  width: 45%;
   max-width: 1440px;
   text-align: center;
   color: white;
 }
 
 .video-about-bicycles__choose {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 280px;
   display: flex;
   justify-content: center;
 }
@@ -33,7 +30,7 @@
 .video-about-bicycles__play-btn {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 68%;
   width: 71px;
   height: 71px;
   font-size: 0;
@@ -60,7 +57,8 @@
 
 @media only screen and (max-width: 1023px) {
   .video-about-bicycles {
-    padding: 10vw 17vw 31vw;
+    padding: 10vw 17vw 1vw;
+    background: linear-gradient(180deg, rgba(19, 19, 20, 1) 81%, rgba(255, 255, 255, 1) 25%);
   }
 
   .video-about-bicycles h2 {
@@ -69,6 +67,7 @@
 
   .video-about-bicycles p {
     width: 90%;
+    margin-bottom: 45px;
   }
 
   .video-about-bicycles__choose {
@@ -76,8 +75,8 @@
   }
 
   .video-about-bicycles__play-btn {
-    left: 49.7%;
-    top: 48.5%;
+    left: 50%;
+    top: 69%;
     width: 92px;
     height: 92px;
     background-size: 90px 90px;
@@ -86,12 +85,18 @@
 
 @media only screen and (max-width: 767px) {
   .video-about-bicycles {
-    padding: 88px 15px 173px;
+    padding: 88px 15px 40px;
+  }
+
+  .video-about-bicycles h2 {
+    font-size: 23px;
   }
 
   .video-about-bicycles p {
     padding: 0;
     width: 100%;
+    line-height: 28px;
+    margin-bottom: 50px;
   }
 
   .video-about-bicycles__choose {
@@ -99,8 +104,8 @@
   }
 
   .video-about-bicycles__play-btn {
-    left: 49.5%;
-    top: 47.5%;
+    left: 50%;
+    top: 74%;
     width: 68px;
     height: 68px;
     background-size: 65px 65px;
