@@ -536,7 +536,7 @@ template {
     width: 100%; } }
 
 .about-us {
-  padding: 152px 140px; }
+  padding: 150px 140px 100px; }
 
 .about-us__wrapper h2 {
   margin-bottom: 60px;
@@ -560,7 +560,8 @@ template {
 
 .about-us__item {
   width: 18vw;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 30px; }
 
 .about-us__num {
   display: inline-block;

@@ -17,7 +17,6 @@ toggleBtn.addEventListener(`click`, function () {
   toggleBtn.classList.toggle(`main-header__toggle--closed`);
 });
 
-  $(document).ready(function () {
-    $('#phone').mask("+7(999) 999-99-99");
-  });
-
+$(document).ready(function () {
+  $(`#phone`).mask(`+7(999) 999-99-99`);
+});
